@@ -1,0 +1,33 @@
+body {
+	margin: 0;
+	top: 0;
+
+	overflow-x: hidden;
+}
+
+#container {
+	width: 100vw;
+	height: 250vh;
+}
+
+.header__ship {
+	width: 100vw;
+	height: 65vh;
+}
+
+.nav__area {
+	width: 100vw;
+	height: 10vh;
+
+	background-color: #2c2c2c;
+}
+
+.content__wrapper {
+	display: flex;
+	justify-content: center;
+}
+
+.sticky {
+	position: fixed;
+	top: 0;
+}
