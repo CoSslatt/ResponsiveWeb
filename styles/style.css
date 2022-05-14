@@ -1,13 +1,22 @@
+html,
 body {
 	margin: 0;
 	top: 0;
+}
 
-	overflow-x: hidden;
+li {
+	list-style: none;
 }
 
 #container {
 	width: 100vw;
 	height: 250vh;
+}
+
+.img__wrapper {
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
 }
 
 .header__ship {
@@ -19,7 +28,16 @@ body {
 	width: 100vw;
 	height: 10vh;
 
+	margin-top: -16.5px;
+
 	background-color: #2c2c2c;
+	color: white;
+}
+
+.nav__area ul {
+	display: flex;
+	justify-content: space-around;
+	line-height: calc(10vh);
 }
 
 .content__wrapper {
