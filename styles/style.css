@@ -1,7 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+:root {
+	--pure-black: black;
+	--nav-bg-clr: #2c2c2c;
+	--text-on-header-image-clr: #353535;
+}
+
 html,
 body {
 	margin: 0;
 	top: 0;
+	padding: 0;
+
+	font-family: "Roboto", sans-serif;
 }
 
 li {
@@ -14,6 +25,10 @@ li {
 }
 
 .img__wrapper {
+	width: 100vw;
+	height: 65vh;
+	position: relative;
+
 	display: flex;
 	justify-content: center;
 	align-items: flex-end;
@@ -24,14 +39,33 @@ li {
 	height: 65vh;
 }
 
+.header__ship:hover {
+	filter: blur(5px);
+}
+
+.check__voyage {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+
+	display: none;
+
+	font-size: xx-large;
+	text-shadow: 0 0 3px var(--pure-black);
+	color: var(--text-on-header-image-clr);
+}
+
 .nav__area {
 	width: 100vw;
 	height: 10vh;
 
 	margin-top: -16.5px;
 
-	background-color: #2c2c2c;
+	background-color: var(--nav-bg-clr);
 	color: white;
+	font-size: 18px;
+	font-weight: 600;
 }
 
 .nav__area ul {
@@ -46,6 +80,6 @@ li {
 }
 
 .sticky {
-	position: fixed;
+	position: sticky;
 	top: 0;
 }
