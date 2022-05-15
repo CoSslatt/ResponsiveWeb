@@ -14,5 +14,5 @@ imgWrapper.addEventListener("mouseover", (e) => {
 
 function checkVoyageEvent(e) {
 	if (e.target.className == "img__wrapper") checkVoyage.style.display = "block";
-	else checkVoyage.style.display = "none"; //
+	else checkVoyage.style.display = "none";
 }
