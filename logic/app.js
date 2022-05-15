@@ -11,3 +11,7 @@ window.addEventListener("scroll", () => {
 imgWrapper.addEventListener("mouseover", (e) => {
 	checkVoyage.style.display = "block";
 });
+
+imgWrapper.addEventListener("mouseout", (e) => {
+	checkVoyage.style.display = "none";
+});

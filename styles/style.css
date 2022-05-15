@@ -3,7 +3,7 @@
 :root {
 	--pure-black: black;
 	--nav-bg-clr: #2c2c2c;
-	--text-on-header-image-clr: #353535;
+	--text-on-header-image-clr: #13d56a;
 }
 
 html,
@@ -54,6 +54,8 @@ li {
 	font-size: xx-large;
 	text-shadow: 0 0 3px var(--pure-black);
 	color: var(--text-on-header-image-clr);
+
+	animation: header-img-text-anim 3s ease-in-out infinite;
 }
 
 .nav__area {
@@ -82,4 +84,16 @@ li {
 .sticky {
 	position: sticky;
 	top: 0;
+}
+
+@keyframes header-img-text-anim {
+	from {
+		font-size: 13px;
+	}
+	50% {
+		font-size: 30px;
+	}
+	to {
+		font-size: 13px;
+	}
 }
