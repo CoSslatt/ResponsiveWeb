@@ -4,7 +4,6 @@ const checkVoyage = document.querySelector(".check__voyage");
 
 const headerImage = document.querySelector(".header__ship");
 const HEADER_IMAGES_NUMBER = 4;
-let a = 0;
 
 window.addEventListener("scroll", () => {
 	let y = window.scrollY;
@@ -21,12 +20,12 @@ function checkVoyageEvent(e) {
 	else checkVoyage.style.display = "none";
 }
 
+let temp = 1;
 function changeHeaderImage() {
-	if (a == 4) a = 0;
+	if (temp == 4) temp = 0;
 
-	a++;
-	console.log(a);
-	headerImage.src = `images/ship-header-image-${a}.jpg`;
+	temp++;
+	headerImage.src = `images/ship-header-image-${temp}.jpg`;
 }
 
 setInterval(() => {
