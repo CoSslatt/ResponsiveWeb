@@ -1,9 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@700&display=swap");
 
 :root {
 	--pure-black: black;
 	--nav-bg-clr: #2c2c2c;
 	--text-on-header-image-clr: #13d56a;
+	--quote-text-clr: #4848488e;
+	--quote-clr: #636363;
 }
 
 html,
@@ -23,7 +26,7 @@ li {
 
 #container {
 	width: 100vw;
-	height: 250vh;
+	height: 100vh;
 }
 
 .img__wrapper {
@@ -53,7 +56,6 @@ li {
 
 	display: none;
 
-	font-size: xx-large;
 	text-shadow: 0 0 3px var(--pure-black);
 	color: var(--text-on-header-image-clr);
 
@@ -87,12 +89,39 @@ li {
 }
 
 .content__wrapper {
+	width: 100vw;
+	height: 30vh;
+
 	display: flex;
 	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.quote {
+	font-size: 20px;
+	font-weight: normal;
+
+	color: var(--quote-text-clr);
+}
+
+.quote::before,
+.quote::after {
+	content: "”";
+	font-size: 50px;
+	font-weight: 700;
+
+	font-family: "Noto Sans JP", sans-serif;
+
+	color: var(--quote-clr);
+}
+
+.quote::before {
+	content: "„";
 }
 
 .sticky {
-	position: sticky;
+	position: fixed;
 	top: 0;
 }
 
