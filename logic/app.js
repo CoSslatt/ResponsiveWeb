@@ -9,9 +9,10 @@ window.addEventListener("scroll", () => {
 });
 
 imgWrapper.addEventListener("mouseover", (e) => {
-	checkVoyage.style.display = "block";
+	checkVoyageEvent(e);
 });
 
-imgWrapper.addEventListener("mouseout", (e) => {
-	checkVoyage.style.display = "none";
-});
+function checkVoyageEvent(e) {
+	if (e.target.className == "img__wrapper") checkVoyage.style.display = "block";
+	else checkVoyage.style.display = "none";
+}

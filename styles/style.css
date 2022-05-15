@@ -65,15 +65,23 @@ li {
 	margin-top: -16.5px;
 
 	background-color: var(--nav-bg-clr);
-	color: white;
-	font-size: 18px;
-	font-weight: 600;
 }
 
 .nav__area ul {
 	display: flex;
 	justify-content: space-around;
 	line-height: calc(10vh);
+}
+
+.nav-item {
+	color: white;
+	font-size: 18px;
+	font-weight: 600;
+}
+
+.nav-item:hover {
+	cursor: pointer;
+	text-decoration-line: underline;
 }
 
 .content__wrapper {
