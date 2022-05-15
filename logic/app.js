@@ -8,11 +8,11 @@ window.addEventListener("scroll", () => {
 	else navArea.classList.remove("sticky");
 });
 
-imgWrapper.addEventListener("mouseover", (e) => {
+window.addEventListener("mouseover", (e) => {
 	checkVoyageEvent(e);
 });
 
 function checkVoyageEvent(e) {
-	if (e.target.className == "img__wrapper") checkVoyage.style.display = "block";
+	if (e.target.className == "header__ship") checkVoyage.style.display = "block";
 	else checkVoyage.style.display = "none";
 }
