@@ -26,9 +26,13 @@ setInterval(() => {
 }, 3000);
 
 const voyagesSection = document.querySelector(".voyages__section");
+const contentWrapper = document.querySelector(".content__wrapper");
 window.addEventListener("click", (e) => {
 	if (e.target.textContent === "Rejsy") {
-		let calc = window.innerHeight - voyagesSection.clientHeight;
+		let calc =
+			window.innerHeight +
+			contentWrapper.clientHeight -
+			voyagesSection.clientHeight;
 		console.log(calc);
 		scrollTo(0, calc, "smooth");
 	}
