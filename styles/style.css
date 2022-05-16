@@ -9,7 +9,12 @@
 	--quote-clr: #636363;
 }
 
-html,
+html {
+	margin: 0;
+	top: 0;
+	padding: 0;
+}
+
 body {
 	margin: 0;
 	top: 0;
@@ -73,6 +78,9 @@ li {
 	margin-top: -16.5px;
 
 	background-color: var(--nav-bg-clr);
+
+	position: sticky;
+	top: 0;
 }
 
 .nav__area ul {
@@ -172,11 +180,6 @@ h3 {
 	height: fit-content;
 
 	align-self: center;
-}
-
-.sticky {
-	position: sticky;
-	top: 0;
 }
 
 @keyframes header-img-text-anim {

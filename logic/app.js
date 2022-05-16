@@ -1,14 +1,8 @@
-const navArea = document.querySelector(".nav__area");
 const imgWrapper = document.querySelector(".img__wrapper");
 const checkVoyage = document.querySelector(".check__voyage");
 
 const headerImage = document.querySelector(".header__ship");
 const HEADER_IMAGES_NUMBER = 4;
-
-window.addEventListener("scroll", (e) => {
-	let top = window.scrollY;
-	console.log(top);
-});
 
 window.addEventListener("mouseover", (e) => {
 	checkVoyageEvent(e);
