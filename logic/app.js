@@ -28,9 +28,9 @@ setInterval(() => {
 const voyagesSection = document.querySelector(".voyages__section");
 window.addEventListener("click", (e) => {
 	if (e.target.textContent === "Rejsy") {
-		let calc = window.screenTop - voyagesSection.clientHeight;
+		let calc = window.innerHeight - voyagesSection.clientHeight;
 		console.log(calc);
-		scrollTo(0, 500, "smooth");
+		scrollTo(0, calc, "smooth");
 	}
 });
 
