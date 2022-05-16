@@ -24,3 +24,16 @@ function changeHeaderImage() {
 setInterval(() => {
 	changeHeaderImage();
 }, 3000);
+
+const voyagesSection = document.querySelector(".voyages__section");
+window.addEventListener("click", (e) => {
+	if (e.target.textContent === "Rejsy") {
+		let calc = window.screenTop - voyagesSection.clientHeight;
+		console.log(calc);
+		scrollTo(0, 500, "smooth");
+	}
+});
+
+window.addEventListener("scroll", (e) => {
+	console.log(window.scrollY);
+});
