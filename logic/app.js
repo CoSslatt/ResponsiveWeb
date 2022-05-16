@@ -5,10 +5,9 @@ const checkVoyage = document.querySelector(".check__voyage");
 const headerImage = document.querySelector(".header__ship");
 const HEADER_IMAGES_NUMBER = 4;
 
-window.addEventListener("scroll", () => {
-	let y = window.scrollY;
-	if (y > 513) navArea.classList.add("sticky");
-	else navArea.classList.remove("sticky");
+window.addEventListener("scroll", (e) => {
+	let top = window.scrollY;
+	console.log(top);
 });
 
 window.addEventListener("mouseover", (e) => {

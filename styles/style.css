@@ -48,6 +48,10 @@ li {
 	filter: blur(2px);
 }
 
+.header__ship__on__animation {
+	animation: ship-anim 1s ease-in-out forwards;
+}
+
 .check__voyage {
 	position: absolute;
 	left: 50%;
@@ -171,7 +175,7 @@ h3 {
 }
 
 .sticky {
-	position: fixed;
+	position: sticky;
 	top: 0;
 }
 
@@ -184,5 +188,14 @@ h3 {
 	}
 	to {
 		font-size: 16px;
+	}
+}
+
+@keyframes ship-anim {
+	from {
+		transform: translateX(0);
+	}
+	to {
+		transform: translateX(50px);
 	}
 }
