@@ -145,11 +145,25 @@ li {
 	display: flex;
 	justify-content: center;
 	flex-wrap: wrap;
+	gap: 25px;
+}
+
+.voyages__section img {
+	width: 400px;
+	height: 200px;
 }
 
 .voyage__offer__1 {
 	width: fit-content;
 	height: fit-content;
+}
+
+.voyage__description {
+	display: block;
+	width: 400px;
+	height: fit-content;
+
+	align-self: center;
 }
 
 h3 {
@@ -163,23 +177,9 @@ h3 {
 	gap: 20px;
 }
 
-.voyage__offer__1 span {
-	width: 400px;
-	height: fit-content;
-
-	align-self: center;
-}
-
 .voyage__offer__2 {
 	width: fit-content;
 	height: fit-content;
-}
-
-.voyage__offer__2 span {
-	width: 400px;
-	height: fit-content;
-
-	align-self: center;
 }
 
 @keyframes header-img-text-anim {
@@ -200,5 +200,20 @@ h3 {
 	}
 	to {
 		transform: translateX(50px);
+	}
+}
+
+@media screen and (max-width: 800px) {
+	.voyages__section {
+		flex-direction: column;
+	}
+
+	.voyages__section img {
+		width: 300px;
+		height: 200px;
+	}
+
+	.voyage__description {
+		width: fit-content;
 	}
 }

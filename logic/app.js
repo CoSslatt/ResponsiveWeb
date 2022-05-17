@@ -29,15 +29,10 @@ const voyagesSection = document.querySelector(".voyages__section");
 const contentWrapper = document.querySelector(".content__wrapper");
 window.addEventListener("click", (e) => {
 	if (e.target.textContent === "Rejsy") {
-		let calc =
+		let targetVoyages =
 			window.innerHeight +
 			contentWrapper.clientHeight -
 			voyagesSection.clientHeight;
-		console.log(calc);
-		scrollTo(0, calc, "smooth");
+		scrollTo(0, targetVoyages, "smooth");
 	}
-});
-
-window.addEventListener("scroll", (e) => {
-	console.log(window.scrollY);
 });
