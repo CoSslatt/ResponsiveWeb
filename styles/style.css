@@ -25,13 +25,17 @@ body {
 	font-family: "Roboto", sans-serif;
 }
 
+h3 {
+	font-size: 24px;
+}
+
 li {
 	list-style: none;
 }
 
 #container {
 	width: 100vw;
-	height: 100vh;
+	height: fit-content;
 }
 
 .img__wrapper {
@@ -164,10 +168,6 @@ li {
 	height: fit-content;
 
 	align-self: center;
-}
-
-h3 {
-	font-size: 24px;
 }
 
 .offer__wrapper {

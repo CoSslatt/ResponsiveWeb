@@ -25,14 +25,13 @@ setInterval(() => {
 	changeHeaderImage();
 }, 3000);
 
-const voyagesSection = document.querySelector(".voyages__section");
 const contentWrapper = document.querySelector(".content__wrapper");
 window.addEventListener("click", (e) => {
-	if (e.target.textContent === "Rejsy") {
-		let targetVoyages =
-			window.innerHeight +
-			contentWrapper.clientHeight -
-			voyagesSection.clientHeight;
-		scrollTo(0, targetVoyages, "smooth");
+	if (
+		e.target.textContent === "Rejsy" ||
+		e.target.className === "header__ship"
+	) {
+		const target = document.querySelector(".content__wrapper");
+		target.scrollIntoView();
 	}
 });
