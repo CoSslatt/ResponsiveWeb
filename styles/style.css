@@ -2,11 +2,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@700&display=swap");
 
 :root {
+	--window-bg-clr: white;
 	--pure-black: black;
 	--nav-bg-clr: #2c2c2c;
-	--text-on-header-image-clr: #13d56a;
+	--second-clr: #c91bc9;
+	--second-clr-darker: #a114a1;
 	--quote-text-clr: #4848488e;
 	--quote-clr: #636363;
+	--smooth-gray: #2c2c2c;
 }
 
 html {
@@ -70,7 +73,7 @@ li {
 	display: none;
 
 	text-shadow: 0 0 3px var(--pure-black);
-	color: var(--text-on-header-image-clr);
+	color: var(--second-clr);
 
 	animation: header-img-text-anim 3s ease-in-out infinite;
 }
@@ -93,15 +96,21 @@ li {
 	line-height: calc(10vh);
 }
 
-.nav-item {
-	color: white;
+.nav__item {
+	color: var(--window-bg-clr);
 	font-size: 18px;
 	font-weight: 600;
 }
 
-.nav-item:hover {
+.nav__item:hover {
 	cursor: pointer;
 	text-decoration-line: underline;
+}
+
+.hamburger__menu {
+	display: none;
+
+	color: var(--smooth-gray);
 }
 
 .content__wrapper {
@@ -155,6 +164,9 @@ li {
 .voyages__section img {
 	width: 400px;
 	height: 200px;
+
+	border: 2px solid var(--second-clr);
+	box-shadow: 0 0 7px var(--second-clr-darker);
 }
 
 .voyage__offer__1 {
@@ -215,5 +227,28 @@ li {
 
 	.voyage__description {
 		width: fit-content;
+	}
+
+	.img__wrapper {
+		display: none;
+	}
+
+	.nav__area {
+		background-color: white;
+	}
+
+	.nav__area ul {
+		justify-content: flex-end;
+	}
+
+	.nav__item {
+		display: none;
+	}
+
+	.hamburger__menu {
+		display: block;
+
+		margin-top: 15px;
+		margin-right: 15px;
 	}
 }
