@@ -4,10 +4,6 @@ const checkVoyage = document.querySelector(".check__voyage");
 const headerImage = document.querySelector(".header__ship");
 const HEADER_IMAGES_NUMBER = 4;
 
-const menuIcon = document.querySelector(".hamburger__menu");
-const navArea = document.querySelector(".nav__area");
-const navItem = document.querySelectorAll(".nav__item");
-
 window.addEventListener("mouseover", (e) => {
 	checkVoyageEvent(e);
 });
@@ -29,13 +25,27 @@ setInterval(() => {
 	changeHeaderImage();
 }, 3000);
 
-const contentWrapper = document.querySelector(".content__wrapper");
 window.addEventListener("click", (e) => {
-	if (
-		e.target.textContent === "Rejsy" ||
-		e.target.className === "header__ship"
-	) {
-		const target = document.querySelector(".content__wrapper");
-		target.scrollIntoView();
+	if (e.target.className === "header__ship") {
+		gotoVoyages();
+	}
+
+	switch (e.target.textContent) {
+		case "Rejsy":
+			gotoVoyages();
+			break;
+		case "Oferowane klasy":
+			gotoOfferedClasses();
+			break;
 	}
 });
+
+const gotoVoyages = () => {
+	const target = document.querySelector(".content__wrapper");
+	target.scrollIntoView();
+};
+
+const gotoOfferedClasses = () => {
+	const target = document.querySelector(".offered__classes");
+	target.scrollIntoView();
+};
