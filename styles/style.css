@@ -4,7 +4,7 @@
 :root {
 	--window-bg-clr: white;
 	--pure-black: black;
-	--nav-bg-clr: #2c2c2c;
+	--gray-bg-clr: #2c2c2c;
 	--second-clr: #c91bc9;
 	--second-clr-darker: #a114a1;
 	--quote-text-clr: #4848488e;
@@ -84,7 +84,7 @@ li {
 
 	margin-top: -16.5px;
 
-	background-color: var(--nav-bg-clr);
+	background-color: var(--gray-bg-clr);
 
 	position: sticky;
 	top: 0;
@@ -192,6 +192,25 @@ li {
 .voyage__offer__2 {
 	width: fit-content;
 	height: fit-content;
+}
+
+footer {
+	width: 100vw;
+	height: 150px;
+	margin-top: 200px;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	opacity: 0.9;
+
+	background-color: var(--gray-bg-clr);
+}
+
+.footer__text {
+	font-size: 30px;
+	color: white;
 }
 
 @keyframes header-img-text-anim {
