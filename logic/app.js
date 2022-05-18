@@ -4,6 +4,10 @@ const checkVoyage = document.querySelector(".check__voyage");
 const headerImage = document.querySelector(".header__ship");
 const HEADER_IMAGES_NUMBER = 4;
 
+const menuIcon = document.querySelector(".hamburger__menu");
+const navArea = document.querySelector(".nav__area");
+const navItem = document.querySelectorAll(".nav__item");
+
 window.addEventListener("mouseover", (e) => {
 	checkVoyageEvent(e);
 });
@@ -35,9 +39,3 @@ window.addEventListener("click", (e) => {
 		target.scrollIntoView();
 	}
 });
-
-/*
-
-
-
-*/
