@@ -80,7 +80,7 @@ li {
 }
 
 .nav__area {
-	width: 100vw;
+	width: inherit;
 	height: 10vh;
 
 	margin-top: -16.5px;
@@ -255,8 +255,6 @@ li {
 .grid__item:nth-child(5) {
 	font-size: 24px;
 	text-shadow: 0 0 2px gold;
-
-	animation: header-table-text-anim 2s ease-in-out infinite forwards;
 }
 
 /* contact form section */
@@ -264,13 +262,30 @@ li {
 form {
 	width: 100vw;
 	height: fit-content;
-	margin-top: 200px;
+	margin-top: 150px;
 
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
 	gap: 20px;
+}
+
+form h2 {
+	font-size: 30px;
+}
+
+.form__inputs {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	gap: 30px;
+}
+
+.form__submit {
+	width: 110px;
+	height: 30px;
 }
 
 footer {
@@ -310,18 +325,6 @@ footer {
 	}
 	to {
 		transform: translateX(50px);
-	}
-}
-
-@keyframes header-table-text-anim {
-	from {
-		transform: translateY(0);
-	}
-	50% {
-		transform: translateY(-15px);
-	}
-	to {
-		transform: translateY(0);
 	}
 }
 

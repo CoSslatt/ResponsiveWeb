@@ -49,3 +49,8 @@ const gotoOfferedClasses = () => {
 	const target = document.querySelector(".offered__classes__wrapper");
 	target.scrollIntoView();
 };
+
+const submitForm = document.querySelector(".form__submit");
+submitForm.addEventListener("submit", (e) => {
+	e.preventDefault();
+});

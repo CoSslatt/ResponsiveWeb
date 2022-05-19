@@ -28,7 +28,6 @@
 				<ul>
 					<li class="nav__item">Rejsy</li>
 					<li class="nav__item">Oferowane klasy</li>
-					<li class="nav__item">O nas</li>
 					<li class="nav__item">Kontakt</li>
 				</ul>
 			</nav>
@@ -127,14 +126,18 @@
 
 			<header>
 				<form class="contact__form">
-					<input type="text" value="name" class="form__name" />
-					<input type="email" value="email" class="form__email" />
-					<textarea
-						value="Miejsce na twoje pytania"
-						class="form__textarea"
-						cols="40"
-						rows="15"
-					></textarea>
+					<h2>Masz pytanie?</h2>
+					<div class="form__inputs">
+						<input type="text" placeholder="imię" class="form__name" />
+						<input type="email" placeholder="email" class="form__email" />
+						<textarea
+							placeholder="Miejsce na twoje pytanie"
+							class="form__textarea"
+							cols="38"
+							rows="15"
+						></textarea>
+						<input type="button" value="Wyślij" class="form__submit" />
+					</div>
 				</form>
 			</header>
 
