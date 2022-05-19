@@ -259,6 +259,20 @@ li {
 	animation: header-table-text-anim 2s ease-in-out infinite forwards;
 }
 
+/* contact form section */
+
+form {
+	width: 100vw;
+	height: fit-content;
+	margin-top: 200px;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	gap: 20px;
+}
+
 footer {
 	width: 100vw;
 	height: 150px;

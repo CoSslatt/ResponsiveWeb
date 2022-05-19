@@ -46,6 +46,6 @@ const gotoVoyages = () => {
 };
 
 const gotoOfferedClasses = () => {
-	const target = document.querySelector(".offered__classes");
+	const target = document.querySelector(".offered__classes__wrapper");
 	target.scrollIntoView();
 };
