@@ -37,6 +37,9 @@ window.addEventListener("click", (e) => {
 		case "Oferowane klasy":
 			gotoOfferedClasses();
 			break;
+		case "Kontakt":
+			gotoContactForm();
+			break;
 	}
 });
 
@@ -47,6 +50,11 @@ const gotoVoyages = () => {
 
 const gotoOfferedClasses = () => {
 	const target = document.querySelector(".offered__classes__wrapper");
+	target.scrollIntoView();
+};
+
+const gotoContactForm = () => {
+	const target = document.querySelector(".contact__form");
 	target.scrollIntoView();
 };
 
