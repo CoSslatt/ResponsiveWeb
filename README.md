@@ -1,3 +1,3 @@
 ## ResponsiveWeb
 
-https://narcikss.github.io/ResponsiveWeb/
+https://cosslatt.github.io/ResponsiveWeb/
